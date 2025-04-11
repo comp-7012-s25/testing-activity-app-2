@@ -1,24 +1,26 @@
-# README
+# LimerIQ
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A [limerick (poem)](https://en.wikipedia.org/wiki/Limerick_(poetry)) authoring and sharing app.
 
-Things you may want to cover:
+## How to Initialize and Run the App
 
-* Ruby version
+### Prerequisites
 
-* System dependencies
+See [Rails Demos-n-Deets](https://rails-demos-n-deets-2023.herokuapp.com/demos/development-environment) for setup instructions.
 
-* Configuration
+- **Mise** is assumed.
+- **Ruby version 3.3.6** is required.
+- **Bundler** is required.
+- **PostgreSQL** is required.
+- **NodeJS** is required.
 
-* Database creation
+### Initializing the App
 
-* Database initialization
+- `bundle install` - Install all the necessary gems.
+- `rails db:migrate:reset` - Reset and initialize the database.
+- `rails db:seed` - Save seed data to the database (see `db/seeds.rb`).
 
-* How to run the test suite
+### Running the App
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- `rails server` - Run the development web server.
+- Open <http://localhost:3000/> in the browser to launch the app (root page).
